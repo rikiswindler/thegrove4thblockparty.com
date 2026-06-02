@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valmonte Grove 4th of July Block Party 2025</title>
+    <meta property="og:title" content="Valmonte Grove 4th of July Block Party 2025" />
+  <meta property="og:description" content="A neighborhood tradition unlike any other. Friday, July 4th, 4–7pm at Via La Selva Cul-De-Sac." />
+  <meta property="og:image" content="og-preview.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="og-preview.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta property="og:title" content="Valmonte Grove 4th of July Block Party 2025" />
+  <meta property="og:description" content="A neighborhood tradition unlike any other. Friday, July 4th, 4–7pm at Via La Selva Cul-De-Sac." />
+  <meta property="og:image" content="og-preview.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="og-preview.jpg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --red:   #C8102E;
+      --navy:  #002868;
+      --cream: #FAF7F2;
+      --tan:   #EDE8DF;
+      --white: #FFFFFF;
+      --text:  #1A1A2E;
+      --muted: #5C5C72;
+      --gold:  #E8C84A;
+      --nav-h: 60px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--cream);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* ══ NAV ══ */
+    .site-nav {
+      position: sticky; top: 0; z-index: 1000;
+      background: var(--navy);
+      height: var(--nav-h);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px;
+      border-bottom: 3px solid var(--red);
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-style: italic; font-size: 0.95rem;
+      color: var(--white); letter-spacing: 0.03em; white-space: nowrap;
+    }
+    .nav-brand em { color: var(--gold); font-style: normal; }
+    .nav-links { display: flex; align-items: center; gap: 2px; list-style: none; }
+    .nav-links a {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.15em;
+      text-transform: uppercase; color: rgba(255,255,255,0.72);
+      text-decoration: none; padding: 6px 12px; transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links .nav-cta a {
+      background: var(--red); color: var(--white); padding: 8px 16px;
+    }
+    .nav-links .nav-cta a:hover { background: #a80e24; }
+
+    .hamburger {
+      display: none; flex-direction: column; justify-content: center;
+      gap: 5px; width: 40px; height: 40px;
+      cursor: pointer; background: none; border: none; padding: 6px;
+    }
+    .hamburger span {
+      display: block; height: 2px; background: var(--white);
+      border-radius: 2px; transition: transform 0.25s, opacity 0.25s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none; position: fixed;
+      top: var(--nav-h); left: 0; right: 0; bottom: 0;
+      background: var(--navy); z-index: 999;
+      flex-direction: column; padding: 40px 32px 32px;
+      overflow-y: auto; transform: translateX(100%);
+      transition: transform 0.28s ease;
+    }
+    .mobile-menu.open { transform: translateX(0); }
+    .mobile-menu a {
+      font-family: 'Playfair Display', serif; font-style: italic;
+      font-size: 1.9rem; color: var(--white); text-decoration: none;
+      padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+      display: block; transition: color 0.15s;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu .mob-cta {
+      margin-top: 28px; background: var(--red);
+      color: var(--white) !important; font-family: 'Source Serif 4', serif !important;
+      font-style: normal !important; font-size: 0.85rem !important;
+      font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 16px 28px !important; border: none !important;
+      text-align: center; display: block;
+    }
+
+    /* ══ PENNANT BAR ══ */
+    .pennant-bar {
+      background: var(--navy); overflow: hidden;
+      position: relative; height: 64px; width: 100%;
+    }
+    .pennant-bar::before {
+      content: ''; position: absolute;
+      top: 2px; left: 0; right: 0; height: 3px;
+      background: var(--gold); z-index: 10;
+    }
+    #pennants {
+      display: flex; position: absolute;
+      top: 0; left: 0; width: 100%; height: 64px;
+    }
+
+    /* ══ HERO ══ */
+    .hero {
+      position: relative;
+      height: 90vw; max-height: 640px; min-height: 420px;
+      overflow: hidden;
+    }
+    .hero-img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 60%;
+      display: block;
+      filter: brightness(0.46) saturate(0.8);
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom,
+        rgba(0,20,70,0.2) 0%,
+        rgba(0,20,70,0.1) 30%,
+        rgba(0,20,70,0.75) 100%);
+    }
+    .hero-content {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: flex-end;
+      text-align: center;
+      /* more bottom padding so text sits lower, giving title breathing room */
+      padding: 0 20px 52px;
+    }
+    .hero-eyebrow {
+      font-weight: 300; font-style: italic;
+      font-size: clamp(0.72rem, 2.2vw, 0.92rem);
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: rgba(255,255,255,0.78); margin-bottom: 10px;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif; font-weight: 900;
+      font-size: clamp(3.5rem, 13vw, 8rem);
+      line-height: 0.88; color: var(--white);
+    }
+    .hero-title .red { color: #FF4757; }
+
+    /* Block Party sits on its own line with clear separation from title */
+    .hero-sub {
+      font-weight: 300; font-size: clamp(0.85rem, 2.8vw, 1.3rem);
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: rgba(255,255,255,0.88);
+      /* push "Block Party" down away from the descender of "July" */
+      margin-top: 18px;
+    }
+
+    .hero-divider { width: 48px; height: 3px; background: var(--gold); margin: 18px auto; }
+    .hero-details {
+      font-size: clamp(0.85rem, 2.4vw, 1rem);
+      color: rgba(255,255,255,0.9); line-height: 1.85;
+    }
+    .hero-details a {
+      color: rgba(255,255,255,0.9); text-decoration: underline;
+      text-decoration-color: rgba(255,255,255,0.4); text-underline-offset: 3px;
+    }
+    .hero-details a:hover { color: var(--gold); }
+    .hero-badge {
+      display: inline-block; margin-top: 18px;
+      border: 1.5px solid rgba(255,255,255,0.35);
+      padding: 8px 20px; font-size: clamp(0.6rem, 1.6vw, 0.7rem);
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: rgba(255,255,255,0.76);
+    }
+
+    /* ══ STARS ROW ══ */
+    .stars-row {
+      background: var(--red); text-align: center; padding: 9px;
+      font-size: 1rem; letter-spacing: 0.5em;
+      color: rgba(255,255,255,0.55); user-select: none;
+    }
+
+    /* ══ QUICK BAR ══ */
+    .quick-bar {
+      background: var(--white); border-bottom: 1px solid var(--tan);
+      display: flex; flex-wrap: wrap; justify-content: center;
+    }
+    .qb-item {
+      display: flex; flex-direction: column; align-items: center;
+      padding: 24px 32px; border-right: 1px solid var(--tan);
+      text-align: center; flex: 1 1 auto; min-width: 110px;
+    }
+    .qb-item:last-child { border-right: none; }
+    .qb-label {
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--red); margin-bottom: 6px;
+    }
+    .qb-val {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem; color: var(--navy); line-height: 1.3;
+    }
+    .qb-val a {
+      color: var(--navy); text-decoration: none;
+      border-bottom: 1.5px solid var(--red); padding-bottom: 1px;
+    }
+    .qb-val a:hover { color: var(--red); }
+
+    /* ══ KIDS PHOTO — full image, no crop ══ */
+    .kids-photo {
+      width: 100%; display: block;
+      /* use object-fit contain so all kids are visible */
+      object-fit: cover;
+      /* shift up so faces show — top 15% of the image */
+      object-position: center 15%;
+      max-height: 640px;
+    }
+
+    /* ══ SECTIONS — tighter spacing ══ */
+    section {
+      padding: 36px 24px;
+      max-width: 760px; margin: 0 auto;
+    }
+    .section-label {
+      font-size: 0.67rem; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--red);
+      font-weight: 600; margin-bottom: 8px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.6rem, 4.5vw, 2.3rem);
+      font-weight: 700; line-height: 1.15;
+      color: var(--navy); margin-bottom: 16px;
+    }
+    hr.rule { border: none; border-top: 1.5px solid var(--tan); margin: 28px 0; }
+
+    /* ══ FOOD & DRINK ══ */
+    .food-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 12px; margin-top: 20px;
+    }
+    .food-card {
+      background: var(--white); border: 1px solid var(--tan);
+      padding: 22px 20px;
+      display: flex; flex-direction: column; gap: 5px;
+    }
+    .food-card .fc-icon { font-size: 1.7rem; margin-bottom: 2px; }
+    .food-card .fc-label {
+      font-size: 0.6rem; font-weight: 600; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--red);
+    }
+    .food-card .fc-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; color: var(--navy); line-height: 1.2;
+    }
+    .food-card .fc-body { font-size: 0.86rem; color: var(--text); line-height: 1.55; }
+
+    /* Habit combo card — spans both cols, navy bg, logo in white box */
+    .habit-combo {
+      grid-column: span 2;
+      background: var(--navy); border-color: var(--navy);
+      flex-direction: row; align-items: center; gap: 24px;
+      padding: 24px 24px;
+    }
+    .habit-logo-wrap {
+      flex-shrink: 0;
+      background: var(--white);
+      border-radius: 6px;
+      padding: 12px 16px;
+      display: flex; align-items: center; justify-content: center;
+      width: 180px; height: auto;
+    }
+    .habit-logo-wrap img {
+      width: 160px; height: auto; display: block;
+      /* transparent PNG — no filter needed */
+    }
+    .habit-combo .fc-label { color: var(--gold); }
+    .habit-combo .fc-title { color: var(--white); font-size: 1.2rem; }
+    .habit-combo .fc-body { color: rgba(255,255,255,0.82); }
+
+    /* ══ ACTIVITIES — star list ══ */
+    .activity-list {
+      list-style: none; margin-top: 20px;
+      display: flex; flex-direction: column;
+    }
+    .activity-list li {
+      display: flex; align-items: center; gap: 16px;
+      padding: 15px 0; border-bottom: 1px solid var(--tan);
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.05rem, 3vw, 1.35rem);
+      font-weight: 700; color: var(--navy);
+    }
+    .activity-list li:first-child { border-top: 1px solid var(--tan); }
+    .activity-list .star { color: var(--red); font-size: 0.9rem; flex-shrink: 0; }
+    .activity-list li.featured-act {
+      background: var(--cream); padding: 17px 16px;
+      margin: 0 -16px; font-size: clamp(1.1rem, 3.2vw, 1.4rem);
+    }
+    .activity-list li.featured-act .star { color: var(--gold); }
+
+    /* ══ 250TH BAND ══ */
+    .anniversary-banner {
+      background: var(--red); color: var(--white);
+      text-align: center; padding: 48px 24px;
+    }
+    .anniversary-banner .eyebrow {
+      font-size: 0.68rem; letter-spacing: 0.25em;
+      text-transform: uppercase; opacity: 0.78; margin-bottom: 10px;
+    }
+    .anniversary-banner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 5.5vw, 3.2rem);
+      font-weight: 900; line-height: 1.1;
+    }
+    .anniversary-banner p {
+      margin-top: 12px; font-size: 0.95rem; opacity: 0.9;
+      max-width: 500px; margin-left: auto; margin-right: auto;
+    }
+    .star-accent { font-size: 1rem; margin: 0 8px; opacity: 0.6; }
+
+    /* ══ SCHEDULE ══ */
+    .schedule-list { list-style: none; margin-top: 16px; }
+    .schedule-list li {
+      display: flex; align-items: baseline; gap: 20px;
+      padding: 14px 0; border-bottom: 1px solid var(--tan);
+    }
+    .schedule-list li:first-child { border-top: 1px solid var(--tan); }
+    .time {
+      font-family: 'Playfair Display', serif; font-style: italic;
+      font-size: 1rem; color: var(--navy); min-width: 110px; flex-shrink: 0;
+    }
+    .sched-desc { font-size: 0.93rem; color: var(--text); }
+
+    /* ══ TICKETS — cream, fully legible ══ */
+    .tickets-section {
+      background: var(--cream);
+      border-top: 4px solid var(--red);
+      padding: 56px 24px;
+    }
+    .tickets-inner { max-width: 760px; margin: 0 auto; }
+    .tickets-section .section-label { color: var(--red); }
+    .tickets-section .section-title { color: var(--navy); }
+
+    .pricing-row {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 12px; margin: 24px 0 8px;
+    }
+    .price-tile {
+      background: var(--white); border: 1.5px solid var(--tan);
+      border-top: 4px solid var(--navy);
+      padding: 24px 16px; text-align: center;
+    }
+    .tier-label {
+      font-size: 0.63rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 3px; font-weight: 600;
+    }
+    .tier-age { font-size: 0.73rem; color: var(--muted); font-style: italic; margin-bottom: 8px; }
+    .tier-price {
+      font-family: 'Playfair Display', serif; font-size: 2.5rem;
+      font-weight: 700; color: var(--red); line-height: 1;
+    }
+
+    .pay-intro {
+      font-size: 0.9rem; color: var(--text); margin: 6px 0 18px; line-height: 1.6;
+    }
+    .payment-options {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 12px; margin-top: 6px;
+    }
+    .payment-card {
+      background: var(--white); border: 1px solid var(--tan);
+      border-top: 3px solid var(--red);
+      padding: 20px 14px; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 7px;
+    }
+    .method {
+      font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--red); font-weight: 700;
+    }
+    .handle {
+      font-family: 'Playfair Display', serif; font-size: 1.35rem; color: var(--navy); font-weight: 700;
+    }
+    .qr-img {
+      width: 108px; height: 108px; object-fit: contain;
+      border: 1px solid var(--tan); padding: 4px;
+      border-radius: 4px; margin: 3px 0;
+    }
+    .pay-note { font-size: 0.73rem; color: var(--muted); line-height: 1.5; }
+    .payment-note {
+      margin-top: 18px; font-size: 0.82rem; color: var(--muted);
+      font-style: italic; line-height: 1.7;
+      border-top: 1px solid var(--tan); padding-top: 16px;
+    }
+
+    /* ══ FOOTER ══ */
+    footer {
+      background: var(--navy); color: rgba(255,255,255,0.55);
+      text-align: center; padding: 32px 24px;
+      font-size: 0.8rem; line-height: 1.9; letter-spacing: 0.04em;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-brand {
+      font-family: 'Playfair Display', serif; font-style: italic;
+      font-size: 1rem; color: rgba(255,255,255,0.82); margin-bottom: 5px;
+    }
+
+    /* ══ RESPONSIVE ══ */
+    @media (max-width: 720px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .mobile-menu { display: flex; }
+    }
+    @media (max-width: 600px) {
+      /* General */
+      section { padding: 28px 18px; }
+      .section-title { font-size: 1.6rem; }
+
+      /* Quick bar: 2x2 grid */
+      .qb-item { flex: 1 1 48%; min-width: 0; }
+      .qb-item:nth-child(2) { border-right: none; }
+      .qb-item:nth-child(1),
+      .qb-item:nth-child(2) { border-bottom: 1px solid var(--tan); }
+      .qb-item:nth-child(3),
+      .qb-item:nth-child(4) { border-bottom: none; }
+
+      /* Kids photo */
+      .kids-photo { max-height: 340px; object-position: center 15%; }
+
+      /* Food: stack all cards */
+      .food-grid { grid-template-columns: 1fr; }
+      .habit-combo {
+        grid-column: span 1;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 20px 18px;
+      }
+      .habit-logo-wrap {
+        width: 100%; height: auto; padding: 10px;
+        min-width: unset;
+      }
+      .habit-logo-wrap img { width: 130px; }
+
+      /* Activities */
+      .activity-list li { font-size: 1.05rem; padding: 13px 0; }
+      .activity-list li.featured-act { padding: 15px 12px; margin: 0 -12px; }
+
+      /* Tickets pricing: stack */
+      .pricing-row { grid-template-columns: 1fr; gap: 8px; }
+      .price-tile { padding: 18px 16px; }
+      .tier-price { font-size: 2.2rem; }
+
+      /* Payment: stack */
+      .payment-options { grid-template-columns: 1fr; }
+      .payment-card { padding: 18px 14px; }
+      .qr-img { width: 130px; height: 130px; }
+
+      /* Schedule */
+      .time { min-width: 90px; font-size: 0.9rem; }
+
+      /* Anniversary banner */
+      .anniversary-banner { padding: 36px 18px; }
+
+      /* Footer */
+      footer { font-size: 0.78rem; padding: 28px 18px; }
+    }
+
+    /* ══ ANIMATIONS ══ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-eyebrow { animation: fadeUp 0.7s ease both; }
+    .hero-title   { animation: fadeUp 0.7s 0.1s ease both; }
+    .hero-sub     { animation: fadeUp 0.7s 0.22s ease both; }
+    .hero-divider { animation: fadeUp 0.7s 0.28s ease both; }
+    .hero-details { animation: fadeUp 0.7s 0.36s ease both; }
+    .hero-badge   { animation: fadeUp 0.7s 0.44s ease both; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">Valmonte Grove <em>&#9733;</em> July 4th</div>
+    <ul class="nav-links">
+      <li><a href="#details">About</a></li>
+      <li><a href="#food">Food &amp; Drink</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li class="nav-cta"><a href="#tickets">Tickets</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#details"    onclick="closeMenu()">About</a>
+    <a href="#food"       onclick="closeMenu()">Food &amp; Drink</a>
+    <a href="#activities" onclick="closeMenu()">Activities</a>
+    <a href="#tickets"    onclick="closeMenu()" class="mob-cta">Tickets</a>
+  </div>
+
+  <!-- PENNANT BAR -->
+  <div class="pennant-bar"><div id="pennants"></div></div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <img class="hero-img" src="IMG_6433.JPEG" loading="eager" alt="Valmonte Grove 4th of July block party" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Valmonte Grove &nbsp;&bull;&nbsp; Annual Celebration</p>
+      <h1 class="hero-title"><span class="red">4th</span> of<br>July</h1>
+      <p class="hero-sub">Block Party</p>
+      <div class="hero-divider"></div>
+      <p class="hero-details">
+        Friday, July 4th, 2025 &nbsp;&bull;&nbsp; 4:00 &ndash; 7:00 pm<br>
+        <a href="https://maps.app.goo.gl/uxPeXp725dFeYsMu7" target="_blank" rel="noopener">Via La Selva Cul-De-Sac</a>
+      </p>
+      <div class="hero-badge">&#9733; &nbsp; Celebrating America&rsquo;s 250th Birthday &nbsp; &#9733;</div>
+    </div>
+  </div>
+
+  <!-- STARS ROW -->
+  <div class="stars-row">&#9733; &nbsp; &#9733; &nbsp; &#9733; &nbsp; &#9733; &nbsp; &#9733; &nbsp; &#9733; &nbsp; &#9733; &nbsp; &#9733; &nbsp; &#9733; &nbsp; &#9733; &nbsp; &#9733; &nbsp; &#9733;</div>
+
+  <!-- QUICK BAR -->
+  <div class="quick-bar">
+    <div class="qb-item">
+      <div class="qb-label">Date</div>
+      <div class="qb-val">Friday, July 4th</div>
+    </div>
+    <div class="qb-item">
+      <div class="qb-label">Time</div>
+      <div class="qb-val">4:00 &ndash; 7:00 pm</div>
+    </div>
+    <div class="qb-item">
+      <div class="qb-label">Location</div>
+      <div class="qb-val"><a href="https://maps.app.goo.gl/uxPeXp725dFeYsMu7" target="_blank" rel="noopener">Via La Selva Cul-De-Sac</a></div>
+    </div>
+    <div class="qb-item">
+      <div class="qb-label">Includes</div>
+      <div class="qb-val">Dinner, Activities &amp; Prizes</div>
+    </div>
+  </div>
+
+  <!-- KIDS PHOTO — full image, top-anchored to show all faces -->
+  <img
+    class="kids-photo"
+    src="kids.jpg"
+    alt="Kids at the Grove 4th of July"
+  />
+
+  <!-- EVENT DETAILS -->
+  <section id="details">
+    <p class="section-label">About the Party</p>
+    <h2 class="section-title">A neighborhood tradition unlike any other.</h2>
+    <p>Every 4th of July, the Valmonte Grove comes together in the cul-de-sac for food, fun, and good company. This year we&rsquo;re also celebrating a milestone: 250 years of America. Come ready to eat, play, and make memories with your neighbors.</p>
+  </section>
+
+  <div style="max-width:760px;margin:0 auto;padding:0 24px;"><hr class="rule" /></div>
+
+  <!-- FOOD & DRINK -->
+  <section id="food" style="padding-top:0;">
+    <p class="section-label">Food &amp; Drink</p>
+    <h2 class="section-title">Come Hungry.</h2>
+    <div class="food-grid">
+      <div class="food-card habit-combo">
+        <div class="habit-logo-wrap">
+          <img src="habit-logo.png" alt="The Habit Burger Grill" />
+        </div>
+        <div>
+          <div class="fc-label">Dinner</div>
+          <div class="fc-title">Burgers &amp; Fries</div>
+          <div class="fc-body">Choose from a burger, cheeseburger, or veggie burger with fries. Included with every ticket.</div>
+        </div>
+      </div>
+      <div class="food-card">
+        <div class="fc-icon">🍰</div>
+        <div class="fc-label">Dessert Potluck</div>
+        <div class="fc-title">Back by Popular Demand</div>
+        <div class="fc-body">Please bring a dessert to share with 10&ndash;12 people.</div>
+      </div>
+      <div class="food-card">
+        <div class="fc-icon">🍺</div>
+        <div class="fc-label">Beer &amp; Wine</div>
+        <div class="fc-title">Available at the Door</div>
+        <div class="fc-body">$3 per ticket. Cash, Venmo, or Zelle. Not included in admission.</div>
+      </div>
+    </div>
+  </section>
+
+  <div style="max-width:760px;margin:0 auto;padding:0 24px;"><hr class="rule" /></div>
+
+  <!-- ACTIVITIES -->
+  <section id="activities" style="padding-top:0;">
+    <p class="section-label">Activities</p>
+    <h2 class="section-title">Something for everyone.</h2>
+    <ul class="activity-list">
+      <li class="featured-act">
+        <span class="star">&#9733;</span>
+        Entertainment &amp; Games from the Amazing Kid Company
+      </li>
+      <li><span class="star">&#9733;</span> Bounce Houses</li>
+      <li><span class="star">&#9733;</span> Face Painting</li>
+      <li><span class="star">&#9733;</span> Guessing Jar</li>
+      <li><span class="star">&#9733;</span> Water Balloon Toss</li>
+      <li><span class="star">&#9733;</span> Trivia &amp; Prizes</li>
+    </ul>
+  </section>
+
+  <!-- 250TH BAND -->
+  <div class="anniversary-banner">
+    <p class="eyebrow">Special Feature This Year</p>
+    <h2><span class="star-accent">&#9733;</span> America Turns 250 <span class="star-accent">&#9733;</span></h2>
+    <p>Join us for a special edition of Historical Trivia celebrating 250 years of the United States. Prizes for winners. Brush up on your history before you come.</p>
+  </div>
+
+  <!-- SCHEDULE -->
+  <section id="schedule">
+    <p class="section-label">Schedule</p>
+    <ul class="schedule-list">
+      <li>
+        <span class="time">4 &ndash; 5:30 pm</span>
+        <span class="sched-desc">Dinner is served.</span>
+      </li>
+      <li>
+        <span class="time">6:15 pm</span>
+        <span class="sched-desc">Games start.</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- TICKETS -->
+  <div class="tickets-section" id="tickets">
+    <div class="tickets-inner">
+      <p class="section-label">Pay &amp; RSVP</p>
+      <h2 class="section-title">Get your tickets.</h2>
+      <p class="pay-intro">Tickets must be purchased in advance. Price includes dinner, all activities, games, and prizes.</p>
+      <div class="pricing-row">
+        <div class="price-tile">
+          <div class="tier-label">Adults</div>
+          <div class="tier-age">Ages 18&ndash;64</div>
+          <div class="tier-price">$25</div>
+        </div>
+        <div class="price-tile">
+          <div class="tier-label">Kids</div>
+          <div class="tier-age">Ages 2&ndash;17</div>
+          <div class="tier-price">$20</div>
+        </div>
+        <div class="price-tile">
+          <div class="tier-label">Seniors</div>
+          <div class="tier-age">Ages 65+</div>
+          <div class="tier-price">$15</div>
+        </div>
+      </div>
+      <p style="font-size:0.78rem;color:var(--muted);font-style:italic;margin-bottom:20px;">Children under 2 are free.</p>
+      <p class="pay-intro">Scan a QR code to pay, or send directly via Venmo or Zelle. Include the number of adults, seniors, and kids in your note.</p>
+      <div class="payment-options">
+        <div class="payment-card">
+          <div class="method">Venmo</div>
+          <div class="handle">@kimqi</div>
+          <img class="qr-img" src="venmo-qr.png" alt="Venmo QR code" />
+          <div class="pay-note">Note your ticket breakdown when you pay</div>
+        </div>
+        <div class="payment-card">
+          <div class="method">Zelle</div>
+          <div class="handle">310.418.2787</div>
+          <img class="qr-img" src="zelle-qr.png" alt="Zelle QR code" />
+          <div class="pay-note">Note your ticket breakdown when you pay</div>
+        </div>
+        <div class="payment-card">
+          <div class="method">Cash</div>
+          <div class="handle">2409 Via La Selva</div>
+          <div class="pay-note" style="margin-top:6px;">Envelope under the mat. Text 310.418.2787 to confirm.</div>
+        </div>
+      </div>
+      <p class="payment-note">Beer and wine tickets ($3 each) are sold at the door only and are not included in advance admission.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">The Grove 4th of July Party Team</div>
+    <div>Please email us if you have any questions: <a href="mailto:pvegrove@gmail.com">pvegrove@gmail.com</a></div>
+    <div style="margin-top:8px;opacity:0.4;">&copy; 2025 &nbsp;&bull;&nbsp; Valmonte, Palos Verdes Estates</div>
+  </footer>
+
+  <script>
+    // Pennants — fill full width
+    (function() {
+      const bar = document.querySelector('.pennant-bar');
+      const container = document.getElementById('pennants');
+      const colors = ['#C8102E', '#FFFFFF', '#9e0c21'];
+      function fill() {
+        const w = bar.offsetWidth;
+        const pw = 52;
+        const count = Math.ceil(w / pw) + 1;
+        container.innerHTML = '';
+        container.style.cssText = 'display:flex;position:absolute;top:0;left:0;width:100%;height:64px;';
+        for (let i = 0; i < count; i++) {
+          const el = document.createElement('div');
+          el.style.cssText = `flex:1;height:64px;clip-path:polygon(0 0,100% 0,50% 100%);background:${colors[i % 3]};`;
+          container.appendChild(el);
+        }
+      }
+      fill();
+      window.addEventListener('resize', fill);
+    })();
+
+    // Hamburger
+    const hamburger  = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) closeMenu();
+    });
+  </script>
+
+</body>
+</html>
